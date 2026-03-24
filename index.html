@@ -1,11 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Grandparents and Their Choices</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #game { margin: 20px; padding: 20px; border: 1px solid #ccc; }
+    </style>
 </head>
 <body>
-    <h1>Grandparents and Their Choices</h1>
-    <p>In today’s society, many grandparents face the decision of whether to take care of their grandchildren. While some embrace this role with enthusiasm, others feel they deserve a peaceful retirement after years of raising their children.</p>
-    <p>These grandparents believe they have earned their rest and view this period of their lives as a time to focus on their interests and well-being. This can lead to tension in families, especially when parents expect them to step in as caregivers.</p>
-    <p>While the intentions of both parties are often rooted in love, understanding and compromise are essential to navigate these generational differences.</p>
+    <div id="game">
+        <h1>Survival Game: Parents vs Grandparents</h1>
+        <p>Welcome to the game! Select your character and start the battle.</p>
+        <button onclick="startGame()">Start Game</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        function startGame() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Game started! Choose wisely...';
+            // Game logic here
+        }
+    </script>
 </body>
 </html>
