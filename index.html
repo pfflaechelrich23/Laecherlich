@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eltern vs. Großeltern</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eltern vs. Großeltern</h1>
+    </header>
+    <section>
+        <h2>Willkommen auf der Website!</h2>
+        <p>Hier vergleichen wir die Ansichten und Lebensstile von Eltern und Großeltern.</p>
+        <button id="toggleInfo">Weitere Informationen anzeigen</button>
+        <div id="additionalInfo" style="display:none;">
+            <p>Eltern sind oft mit neuen Technologien vertraut, während Großeltern eher traditionelle Werte schätzen.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Eltern vs. Großeltern</p>
+    </footer>
+    <script>
+        document.getElementById('toggleInfo').onclick = function() {
+            var info = document.getElementById('additionalInfo');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+                this.innerText = 'Weniger Informationen anzeigen';
+            } else {
+                info.style.display = 'none';
+                this.innerText = 'Weitere Informationen anzeigen';
+            }
+        };
+    </script>
+</body>
+</html>
